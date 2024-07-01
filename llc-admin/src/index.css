@@ -1,0 +1,439 @@
+@import url('https://use.typekit.net/uyg3umz.css');
+@import 'react-toastify/dist/ReactToastify.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-border-opacity: 1;
+  --color-primary: 22 78 99;
+  --color-secondary: 226 232 240;
+  --color-success: 13 148 136;
+  --color-info: 6 182 212;
+  --color-warning: 245 158 11;
+  --color-pending: 217 119 6;
+  --color-danger: 185 28 28;
+  --color-light: 241 245 249;
+  --color-dark: 30 41 59;
+  --color-slate-50: 248 250 252;
+  --color-slate-100: 241 245 249;
+  --color-slate-200: 226 232 240;
+  --color-slate-300: 203 213 225;
+  --color-slate-400: 148 163 184;
+  --color-slate-500: 100 116 139;
+  --color-slate-600: 71 85 105;
+  --color-slate-700: 51 65 85;
+  --color-slate-800: 30 41 59;
+  --color-slate-900: 15 23 42;
+}
+
+@layer base {
+  html {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont,
+      'Segoe UI, ' Roboto ', sans-serif;', 'Oxygen', 'Ubuntu', 'Cantarell',
+      'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'DM Sans', sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont,
+    'Segoe UI, ' Roboto ', sans-serif;', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.app-btn,
+.redirect-btn,
+.link-btn,
+.redirect-card {
+  cursor: pointer;
+}
+
+.app-btn:hover,
+.redirect-btn:hover,
+.link-btn:hover {
+  opacity: 0.6;
+}
+
+.redirect-card:hover {
+  transform: scale(1.015);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ant-image-preview-img {
+  display: inline-block;
+}
+
+.header-menu__dropdown {
+  position: fixed !important;
+}
+
+.ant-layout-content {
+  width: 100%;
+  background-color: #fff;
+}
+
+.ant-tooltip-inner {
+  border-radius: 0.6rem;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src: url('fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url('fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 600;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 800;
+  src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+.app-text,
+span,
+label,
+p,
+b,
+i,
+a,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto';
+  margin-bottom: 0;
+}
+
+.ant-popover-inner {
+  border-radius: 6px;
+}
+
+.header-dropdown-menu .ant-dropdown-menu {
+  margin-top: 0.625rem;
+  background-color: #009bb7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 3px 10px #00000080;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.header-dropdown-menu .ant-dropdown-menu li {
+  margin: 0.625rem 0;
+}
+
+.header-dropdown-menu .ant-dropdown-menu li .logout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-dropdown-menu .ant-dropdown-menu li span {
+  color: #f1f5f9;
+  margin-left: 4px;
+}
+
+.header-dropdown-menu .ant-dropdown-menu li:not(:last-child):after {
+  content: '';
+  position: absolute;
+  bottom: -0.625rem;
+  right: 0;
+  border-top: 1px solid #fff;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.header-dropdown-menu .ant-dropdown-menu-item-disabled:hover,
+.header-dropdown-menu .ant-dropdown-menu-item:hover,
+.header-dropdown-menu .ant-dropdown-menu-submenu-title-disabled:hover {
+  background-color: rgb(255 255 255 / 0.05);
+  border-radius: 0.375rem;
+}
+
+.header-dropdown-menu .ant-dropdown-menu-title-content {
+  flex: unset;
+  position: relative;
+}
+
+/* Message antd */
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Table */
+
+.table-row-light {
+  background-color: #fff;
+}
+.table-row-dark {
+  background-color: #f1f5f9;
+}
+
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  min-height: 15rem;
+  max-height: 29rem;
+}
+
+.ant-table-tbody td.ant-table-column-sort {
+  background: unset;
+}
+
+.ant-table-thead th.ant-table-column-has-sorters:hover {
+  background: #009bb7 !important;
+}
+
+.ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: white !important;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  content: '';
+}
+
+.other h2 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 7px;
+}
+
+.other a {
+  color: #777;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.other ul {
+  padding: 0;
+  margin: 0;
+  /* list-style-type: none; */
+}
+ul {
+  list-style: initial !important;
+}
+ol {
+  list-style: decimal !important;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.ltr {
+  text-align: left;
+}
+
+.rtl {
+  text-align: right;
+}
+.textDetail {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+div.ant-dropdown.header-dropdown-menu.ant-dropdown-placement-bottomRight
+  ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light
+  li.ant-dropdown-menu-item.ant-dropdown-menu-item-only-child
+  span.ant-dropdown-menu-title-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.challenge-tabs.ant-radio-button-wrapper:not(:first-child):before {
+  display: none;
+}
+
+.challenge-tabs.ant-radio-button-wrapper:hover {
+  color: #009bb7;
+  border-color: #009bb7 !important;
+}
+
+.challenge-tabs.ant-radio-button-wrapper-checked {
+  border-color: #009bb7 !important;
+  box-shadow: none !important;
+}
+
+.challenge-tabs.ant-radio-button-wrapper-checked span {
+  color: #009bb7;
+}
+
+.editor-content .editor-shell > div > div:first-child {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.editor-content .editor-shell > div > .editor-container {
+  position: absolute !important;
+  z-index: 2 !important;
+  top: 100px !important;
+  height: 600px !important;
+  overflow-y: auto !important;
+  width: 100%;
+}
+
+.editor-content .editor-shell > div > div > .editor-container .editor-scroller {
+  height: 100% !important;
+}
+
+.editor-content .editor-shell > div > div > div:first-child {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.editor-content .editor-shell > div > div > .editor-container {
+  position: absolute !important;
+  z-index: 2 !important;
+  top: 100px !important;
+  height: 600px !important;
+  overflow-y: auto !important;
+  width: 100%;
+}
+
+.editor-content .editor-shell > div > div > .editor-container .editor-scroller {
+  height: 100% !important;
+}
+
+.editor-content .editor-shell > div > div {
+  height: 710px;
+}
+#typeahead-menu {
+  z-index: 9999999 !important;
+}

@@ -1,0 +1,15 @@
+{
+  "delete_email_content_title": "Delete this email content",
+  "delete_email_content_content": "Are you sure to delete this email content?",
+  "create_new_email_content": "New email content",
+  "header_edit": "Edit email content",
+  "header_create": "Create email content",
+  "form_label_type": "Type of email",
+  "form_label_group": "Assign group user",
+  "form_label_title": "Title",
+  "form_label_content": "Content",
+  "form_label_upload": "Upload photo",
+  "preview": "Preview",
+  "save": "Save",
+  "modal_create_content": "This email will be saved and published to all chosen members, make sure you have been checking all content."
+}

@@ -1,0 +1,14 @@
+{
+  "delete_routine_title": "Delete this routine",
+  "delete_routine_content": "Are you sure to delete this routine?",
+  "delete_published_routine": "Can't delete daily routine",
+  "header_create": "New daily routine",
+  "header_detail": "Detail daily routine",
+  "form_type": "Type",
+  "form_title": "Title",
+  "form_title_in_dutch": "Title in Netherlands",
+  "form_description": "Description",
+  "form_description_in_dutch": "Description in Netherlands",
+  "form_label_upload": "Upload photo",
+  "form_make_as_default_routine": "Make as a default daily routine"
+}

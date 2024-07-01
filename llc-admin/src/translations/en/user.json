@@ -1,0 +1,12 @@
+{
+  "sickness": "Sickness",
+  "status": "Status",
+  "active": "Active",
+  "inactive": "Inactive",
+  "block": "Blocked/Restricted",
+  "delete": "Deleted",
+  "delete_can_recover": "Delete - Can recover",
+  "delete_not_recover": "Delete - Can not recover",
+  "male": "Male",
+  "female": "Female"
+}

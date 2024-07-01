@@ -1,0 +1,38 @@
+{
+  "no": "No",
+  "salesforce_id": "Sale force id",
+  "full_name": "Full name",
+  "email": "Email",
+  "mobile": "Mobile",
+  "gender": "Gender",
+  "status": "Status",
+  "last_update_time": "Last Update Time",
+  "action": "Action",
+  "add_new_user": "Add new user",
+  "search_by_email": "Search by email",
+  "user_management": "User management",
+
+  "user_detail": {
+    "user_detail": "USER DETAIL",
+    "login_link": "Login Link",
+    "generate_link": "Generate Link",
+    "phone": "Phone",
+    "export_availability": "Export Availability",
+    "select_date_range": "Select Date Range",
+    "export_csv": "Export CSV",
+    "export_xlsx": "Export XLSX",
+    "day": "Day",
+    "night": "Night",
+    "active": "Active",
+    "inactive": "Inactive",
+    "edit_user_form": "EDIT USER FORM",
+    "phone_number": "Phone number",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "male": "Male",
+    "female": "Female",
+    "please_pick_your_start_date_and_end_date_before_exporting_file": "Please pick your Start Date and End Date before exporting file"
+  },
+
+  "locale": "en-EN"
+}
